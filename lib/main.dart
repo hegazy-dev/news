@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:news/app_theme.dart';
+import 'package:news/home_screen.dart';
 import 'package:news/l10n/app_localizations.dart';
 import 'providers/settings_provider.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,8 @@ class newsApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      routes: {HomeScreen.routeName: (_) => HomeScreen()},
+      initialRoute: HomeScreen.routeName,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: .dark,
