@@ -1,0 +1,31 @@
+{
+  "appName": "تطبيق الأخبار",
+
+  "home": "الرئيسية",
+  "goodMorning": "صباح الخير",
+  "hereIsSomeNewsForYou": "إليك بعض الأخبار من أجلك",
+
+  "general": "عام",
+  "business": "أعمال",
+  "sports": "رياضة",
+  "technology": "تكنولوجيا",
+  "entertainment": "ترفيه",
+  "health": "صحة",
+  "science": "علوم",
+
+  "viewAll": "عرض الكل",
+  "viewFullArticle": "عرض المقال كاملاً",
+
+  "search": "بحث",
+
+  "goToHome": "الذهاب للرئيسية",
+  "theme": "المظهر",
+  "language": "اللغة",
+
+  "dark": "داكن",
+  "light": "فاتح",
+  "system": "النظام",
+
+  "english": "الإنجليزية",
+  "arabic": "العربية"
+}

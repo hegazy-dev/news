@@ -1,0 +1,31 @@
+{
+  "appName": "News App",
+
+  "home": "Home",
+  "goodMorning": "Good Morning",
+  "hereIsSomeNewsForYou": "Here is Some News For You",
+
+  "general": "General",
+  "business": "Business",
+  "sports": "Sports",
+  "technology": "Technology",
+  "entertainment": "Entertainment",
+  "health": "Health",
+  "science": "Science",
+
+  "viewAll": "View All",
+  "viewFullArticle": "View Full Article",
+
+  "search": "Search",
+
+  "goToHome": "Go To Home",
+  "theme": "Theme",
+  "language": "Language",
+
+  "dark": "Dark",
+  "light": "Light",
+  "system": "System",
+
+  "english": "English",
+  "arabic": "Arabic"
+}

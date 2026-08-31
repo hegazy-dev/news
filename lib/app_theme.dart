@@ -14,10 +14,11 @@ class AppTheme {
       centerTitle: true,
     ),
     textTheme: TextTheme(
-      titleLarge: TextStyle(fontSize: 20, fontWeight: .bold),
-      titleMedium: TextStyle(fontSize: 16, fontWeight: .bold),
-      titleSmall: TextStyle(fontSize: 14, fontWeight: .w500),
-      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500),
+      titleLarge: TextStyle(fontSize: 24, fontWeight: .bold, color: black),
+      titleMedium: TextStyle(fontSize: 20, fontWeight: .bold, color: white),
+      titleSmall: TextStyle(fontSize: 16, fontWeight: .bold, color: white),
+      labelLarge: TextStyle(fontSize: 14, fontWeight: .w500, color: white),
+      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500, color: grey),
     ),
   );
 
