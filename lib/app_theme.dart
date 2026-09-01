@@ -19,7 +19,7 @@ class AppTheme {
       titleMedium: TextStyle(fontSize: 20, fontWeight: .bold, color: white),
       titleSmall: TextStyle(fontSize: 16, fontWeight: .bold, color: white),
       labelLarge: TextStyle(fontSize: 14, fontWeight: .w500, color: white),
-      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500, color: grey),
+      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500, color: white),
     ),
   );
 
@@ -32,10 +32,12 @@ class AppTheme {
       centerTitle: true,
     ),
     textTheme: TextTheme(
-      titleLarge: TextStyle(fontSize: 20, fontWeight: .bold),
-      titleMedium: TextStyle(fontSize: 16, fontWeight: .bold),
-      titleSmall: TextStyle(fontSize: 14, fontWeight: .w500),
-      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500),
+      headlineMedium: TextStyle(fontSize: 32, fontWeight: .bold, color: black),
+      titleLarge: TextStyle(fontSize: 24, fontWeight: .bold, color: black),
+      titleMedium: TextStyle(fontSize: 20, fontWeight: .bold, color: white),
+      titleSmall: TextStyle(fontSize: 16, fontWeight: .bold, color: white),
+      labelLarge: TextStyle(fontSize: 14, fontWeight: .w500, color: white),
+      labelMedium: TextStyle(fontSize: 12, fontWeight: .w500, color: grey),
     ),
   );
 }
