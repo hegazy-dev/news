@@ -23,7 +23,7 @@ class newsApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: .dark,
+      themeMode: settingsProvider.themeMode,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       locale: Locale(settingsProvider.languageCode),
