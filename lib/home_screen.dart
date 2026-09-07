@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: HomeDrawer(onGoToHomeClicked: resetSelectedCategory),
       body: selectedCategory == null
           ? CategoriesView(onCategorySelected: onCategorySelected)
-          : NewsView(),
+          : NewsView(categoryId: selectedCategory!.id),
     );
   }
 

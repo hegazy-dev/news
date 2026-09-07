@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news/models/sources_model.dart';
+import 'package:news/models/sources_responce/source.dart';
 
 class TabItem extends StatelessWidget {
-  SourcesModel source;
+  Source source;
   bool isSelected;
 
   TabItem({required this.source, required this.isSelected});
@@ -12,7 +12,7 @@ class TabItem extends StatelessWidget {
     TextTheme textTheme = Theme.of(context).textTheme;
 
     return Text(
-      source.name,
+      source.name ?? '',
       style: isSelected ? textTheme.titleSmall : textTheme.labelLarge,
     );
   }

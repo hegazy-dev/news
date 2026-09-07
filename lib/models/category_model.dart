@@ -10,12 +10,20 @@ class CategoryModel {
   });
 
   static List<CategoryModel> categories = [
-    CategoryModel(id: '', name: 'General', imageName: 'general'),
-    CategoryModel(id: '', name: 'Business', imageName: 'busniess'),
-    CategoryModel(id: '', name: 'Sports', imageName: 'sport'),
-    CategoryModel(id: '', name: 'Technology', imageName: 'technology'),
-    CategoryModel(id: '', name: 'Entertainment', imageName: 'entertainment'),
-    CategoryModel(id: '', name: 'Health', imageName: 'helth'),
-    CategoryModel(id: '', name: 'Science', imageName: 'science'),
+    CategoryModel(id: 'general', name: 'General', imageName: 'general'),
+    CategoryModel(id: 'business', name: 'Business', imageName: 'busniess'),
+    CategoryModel(id: 'sports', name: 'Sports', imageName: 'sport'),
+    CategoryModel(
+      id: 'technology',
+      name: 'Technology',
+      imageName: 'technology',
+    ),
+    CategoryModel(
+      id: 'entertainment',
+      name: 'Entertainment',
+      imageName: 'entertainment',
+    ),
+    CategoryModel(id: 'health', name: 'Health', imageName: 'helth'),
+    CategoryModel(id: 'science', name: 'Science', imageName: 'science'),
   ];
 }
