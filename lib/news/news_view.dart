@@ -19,11 +19,12 @@ class NewsView extends StatefulWidget {
 
 class _NewsViewState extends State<NewsView> {
   int currentIndex = 0;
+  late final getSourcesFuture = ApiService.getSources(widget.categoryId);
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: ApiService.getSources(widget.categoryId),
+      future: getSourcesFuture,
       builder: (context, snapshot) {
         if (snapshot.connectionState == .waiting) {
           return const LoadingIndicator();
@@ -59,11 +60,26 @@ class _NewsViewState extends State<NewsView> {
                 ),
               ),
               Expanded(
-                child: ListView.separated(
-                  padding: EdgeInsets.only(top: 16),
-                  itemBuilder: (_, index) => NewsItem(),
-                  separatorBuilder: (_, _) => SizedBox(height: 16),
-                  itemCount: 10,
+                child: FutureBuilder(
+                  future: ApiService.getNews(sources[currentIndex].id!),
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == .waiting) {
+                      return const LoadingIndicator();
+                    } else if (snapshot.hasError ||
+                        snapshot.data?.status != 'ok') {
+                      return const ErrorIndicator();
+                    } else {
+                      final newsList = snapshot.data?.newsList ?? [];
+
+                      return ListView.separated(
+                        padding: EdgeInsets.only(top: 16),
+                        itemBuilder: (_, index) =>
+                            NewsItem(news: newsList[index]),
+                        separatorBuilder: (_, _) => SizedBox(height: 16),
+                        itemCount: newsList.length,
+                      );
+                    }
+                  },
                 ),
               ),
             ],
