@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:news/api/api_constants.dart';
+import 'package:news/shared/constants/api_constants.dart';
 import 'package:news/sources/data/models/sources_responce.dart';
 
 class SourcesDataSource {

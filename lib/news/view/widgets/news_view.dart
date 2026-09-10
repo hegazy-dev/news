@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:news/app_theme.dart';
-import 'package:news/models/category_model.dart';
+import 'package:news/shared/theme/app_theme.dart';
+import 'package:news/categories/data/models/category_model.dart';
 import 'package:news/news/view/widgets/news_item.dart';
 import 'package:news/news/view_model/news_view_model.dart';
 import 'package:news/sources/view/widgets/tab_item.dart';
 import 'package:news/sources/view_model/sources_view_model.dart';
-import 'package:news/widgets/error_indicator.dart';
-import 'package:news/widgets/loading_indicator.dart';
+import 'package:news/shared/widgets/error_indicator.dart';
+import 'package:news/shared/widgets/loading_indicator.dart';
 import 'package:provider/provider.dart';
 
 class NewsView extends StatefulWidget {

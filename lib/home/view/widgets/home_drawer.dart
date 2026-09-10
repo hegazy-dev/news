@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:news/app_theme.dart';
+import 'package:news/shared/theme/app_theme.dart';
 import 'package:news/providers/settings_provider.dart';
 import 'package:provider/provider.dart';
 

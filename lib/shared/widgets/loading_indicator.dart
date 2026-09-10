@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/app_theme.dart';
+import 'package:news/shared/theme/app_theme.dart';
 
 class LoadingIndicator extends StatelessWidget {
   const LoadingIndicator({super.key});

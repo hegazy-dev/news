@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/app_theme.dart';
+import 'package:news/shared/theme/app_theme.dart';
 import 'package:news/news/data/models/news.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
