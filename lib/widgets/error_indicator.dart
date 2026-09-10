@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ErrorIndicator extends StatelessWidget {
-  const ErrorIndicator([this.message = 'Something went wrong!']);
+   ErrorIndicator([this.message = 'Something went wrong!']);
 
   final String message;
 

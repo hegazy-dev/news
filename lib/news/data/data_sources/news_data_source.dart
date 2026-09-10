@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:news/api/api_constants.dart';
-import 'package:news/models/news_response/news_response.dart';
+import 'package:news/news/data/models/news_response.dart';
 import 'package:news/sources/data/models/sources_responce.dart';
 
-class ApiService {
-  static Future<NewsResponse> getNews(String sourceId) async {
+class NewsDataSource {
+  Future<NewsResponse> getNews(String sourceId) async {
     final uri = Uri.https(ApiConstants.baseURL, ApiConstants.newsEndpoint, {
       'apiKey': ApiConstants.apiKey,
       'sources': sourceId,
