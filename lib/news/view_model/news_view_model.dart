@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
-import 'package:news/news/data/data_sources/news_data_source.dart';
 import 'package:news/news/data/models/news.dart';
+import 'package:news/news/data/repositories/news_repository.dart';
 
 class NewsViewModel with ChangeNotifier {
-  final dataSource = NewsDataSource();
+  final repository = NewsRepository();
   List<News> newsList = [];
   bool isLoading = false;
   String? errorMessage;
@@ -11,7 +11,7 @@ class NewsViewModel with ChangeNotifier {
   Future<void> getNews(String sourceId) async {
     isLoading = true;
     try {
-      newsList = await dataSource.getNews(sourceId);
+      newsList = await repository.getNews(sourceId);
     } catch (error) {
       errorMessage = error.toString();
     }
