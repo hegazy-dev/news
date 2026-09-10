@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:news/shared/service_locator.dart';
 import 'package:news/shared/theme/app_theme.dart';
 import 'package:news/categories/data/models/category_model.dart';
 import 'package:news/news/view/widgets/news_item.dart';
@@ -21,8 +22,8 @@ class NewsView extends StatefulWidget {
 
 class _NewsViewState extends State<NewsView> {
   int currentIndex = 0;
-  final sourcesViewModel = SourcesViewModel();
-  final newsViewModel = NewsViewModel();
+  final sourcesViewModel = ServiceLocator.sourcesViewModel;
+  final newsViewModel = ServiceLocator.newsViewModel;
 
   @override
   void initState() {
