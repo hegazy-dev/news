@@ -11,12 +11,7 @@ class SourcesViewModel with ChangeNotifier {
   Future<void> getSources(String categoryId) async {
     isLoading = true;
     try {
-      final response = await dataSource.getSources(categoryId);
-      if (response.status == 'ok' && response.sources != null) {
-        sources = response.sources!;
-      } else {
-        errorMessage = 'Failed to get sources';
-      }
+      sources = await dataSource.getSources(categoryId);
     } catch (error) {
       errorMessage = error.toString();
     }

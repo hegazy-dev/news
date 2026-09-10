@@ -1,4 +1,4 @@
-import 'source.dart';
+import 'package:news/sources/data/models/source.dart';
 
 class SourcesResponce {
   String? status;
